@@ -1,0 +1,19 @@
+.containerMainPage{
+  margin-top: 10.5994rem;
+}
+
+.wrapperMainPage{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+@media screen and (max-width: 1024px){
+  .containerMainPage{
+    margin-top: 7.7869rem;
+  }
+  
+  .wrapperMainPage{
+    gap: 2.5rem;
+  }
+}

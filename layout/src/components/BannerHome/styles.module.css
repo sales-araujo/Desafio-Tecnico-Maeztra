@@ -1,0 +1,55 @@
+.containerInfoBanner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+  max-width: 99.25rem;
+  margin: 0 auto;
+  padding: 0 .625rem;
+  overflow: hidden;
+}
+
+.contentInfoBanner{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 26.25rem;
+  max-width: 26.25rem;
+}
+
+.contentInfoBanner h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.contentInfoBanner p{
+  font-size: .875rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.3306rem;
+}
+
+.bannerHome{
+  display: flex;
+}
+
+.bannerHome img{
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px){
+  .containerInfoBanner{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 0 1.9375rem;
+  }
+
+  .contentInfoBanner{
+    min-width: 100%;
+    max-width: 100%;
+  }
+}

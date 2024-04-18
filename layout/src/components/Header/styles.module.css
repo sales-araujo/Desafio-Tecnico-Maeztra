@@ -1,0 +1,290 @@
+/* TopHeader */
+.containerTopHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #353535;
+  padding: .3rem 0;
+}
+
+.containerTopHeader p{
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+/* Header */
+.containerHeaderPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  transform: translateY(0);
+  z-index: 99;
+}
+
+.containerHeader{
+  width: 100%;
+  box-shadow: 0px 4px 6px 0px #00000014;
+  padding: 1.5rem 0;
+}
+
+.wrapperHeader{
+  width: 100%;
+  max-width: 99.25rem;
+  margin: 0 auto;
+  padding: 0 .625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchProductWrapper{
+  width: 100%;
+  max-width: 49.4375rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.searchProductWrapper .inputSearch{
+  width: 100%;
+  height: 2.5rem;
+  background-color: #EFEFEF;
+  border: 0;
+  border-radius: .625rem;
+  padding: 0 7.625rem 0 1.5rem;
+}
+
+.searchProductWrapper .inputSearch::placeholder{
+  color: #353535;
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+.searchProductWrapper .inputSearch:focus{
+  outline: 0;
+}
+
+.searchProductWrapper .btnSearch{
+  position: absolute;
+  left: auto;
+  right: 0;
+  width: 7.4375rem;
+  height: 2.5rem;
+  background-color: #FAA500;
+  border-radius: .5rem;
+  border: 0;
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+
+.searchProductWrapper .btnSearch:hover{
+  background-color: #c58301f7;
+}
+
+.containerNavHeader{
+  display: flex;
+  align-items: center;
+  gap: 2.4375rem;
+  padding-left: 1rem;
+}
+
+.containerNavHeader .containerNav{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  text-decoration: none;
+}
+
+.containerNav p{
+  color: #353535;
+  font-size: .875rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.containerNav.btnMinicart{
+  padding: .75rem;
+  border: 1px solid #FAA500;
+  border-radius: .5rem;
+}
+
+/* Menu */
+.containerNavBar{
+  width: 100%;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.wrapperNavBar{
+  width: 100%;
+  max-width: 89.125rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75rem .625rem;
+}
+
+.menuItem{
+  text-decoration: none;
+  color: #353535;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.menuItem.menuItemHighlights{
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  font-weight: 700;
+  color: #FAA500;
+}
+
+.sideBar{
+  display: none;
+}
+
+/* Mobile */
+.containerSideBarMobile{
+  display: none;
+}
+
+.modalContainerHeader{
+  display: none;
+}
+
+.closeIcon{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+}
+
+.sideBarIcon.disabled,
+.closeIcon.disabled,
+.navHeaderMob{
+  display: none;
+}
+
+.logoPage{
+  display: flex;
+}
+
+@media screen and  (max-width: 1024px){
+  .containerHeader{
+    padding: 2rem 0;
+  }
+
+  .containerSideBarMobile{
+    display: flex;
+  }
+
+  .wrapperHeader{
+    padding: 0 1.25rem;
+  }
+
+  .disabled,
+  .searchProductWrapper{
+    display: none;
+  }
+
+  .containerSideBarMobile button{
+    background-color: transparent;
+    border: 0;
+  }
+
+  .sideBarIcon{
+    display: flex;
+  }
+
+  .activeModal{
+    display: flex;
+  }
+
+  .navHeaderMob{
+    display: flex;
+    align-items: center;
+    gap: 1.9375rem;
+  }
+
+  .containerHeaderPage{
+    box-shadow: 0px 4px 6px 0px #00000014;
+  }
+
+  .wrapperHeader{
+    position: relative;
+  }
+
+  .containerNavBar{
+    display: none;
+  }
+
+  .modalContainerHeader{
+    width: 100%;
+    max-width: 7rem;
+    max-height: 20rem;
+    position: absolute;
+    z-index: 999;
+    transform: translate(-100%, 10%);
+    -webkit-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.5);
+  }
+  
+  .containerNavBarMobile{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .wrapperNavBarMobile{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+  }
+
+  .wrapperNavBarMobile a{
+    text-decoration: none;
+    color: #999;
+    font-weight: 500;
+    font-size: .875rem;
+  }
+
+  .containerStructureResponsive{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .wrapperStructureResponsive{
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+  }
+
+  .btnNavHeaderMobile{
+    display: flex;
+    border: 0;
+    background: transparent;
+  }
+
+  .wrapperHeader .logoPage img{
+    width: 6.875rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .modalContainerHeader{
+    transform: translate(20%, 10%);
+  }
+}

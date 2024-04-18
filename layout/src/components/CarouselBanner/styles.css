@@ -1,0 +1,143 @@
+.sliderBannerContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.sliderBannerWrapper{
+  width: 100%;
+  max-width: 120rem;
+  position: relative;
+}
+
+.sliderBannerWrapper .slick-dots{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  bottom: 1.5rem;
+}
+
+.sliderBannerWrapper .slick-dots li{
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #FAA500;
+  border-radius: 50%;
+}
+
+.sliderBannerWrapper .slick-dots li.slick-active{
+  background-color: #FAA500;
+}
+
+.sliderBannerWrapper .slick-dots button::before{
+  display: none;
+}
+
+.sliderBannerWrapper .slick-list{
+  width: 100%;
+  height: 100%;
+}
+
+.sliderBannerWrapper .slick-track{
+  display: flex;
+  flex-direction: row;
+}
+
+.containerShowCase .slick-prev svg,
+.containerShowCase .slick-next svg{
+  fill: #000000 !important;
+}
+
+.wrapperBannerHome{
+  width: 100%;
+  position: relative;
+}
+
+.wrapperBannerHome img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.ctaTextBannerHome{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: absolute;
+  transform: translate(20%, 0);
+  top: 15%;
+  max-width: 28.75rem;
+}
+
+.ctaTextBannerHome .titleCtaBanner{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ctaTextBannerHome .textCtaBanner{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.ctaTextBannerHome .btnCtaBanner{
+  width: 8rem;
+  height: 3rem;
+  background-color: #FAA500;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: .625rem;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+
+.ctaTextBannerHome .btnCtaBanner:hover{
+  background-color: #c58301f7;
+}
+
+@media screen and (max-width: 1024px){
+  .wrapperBannerHome img{
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .ctaTextBannerHome{
+    max-width: 14.6875rem;
+    gap: 1rem;
+    top: 25%;
+  }
+
+  .ctaTextBannerHome .titleCtaBanner{
+    font-size: 1.875rem;
+    line-height: 1;
+  }
+
+  .ctaTextBannerHome .textCtaBanner{
+    font-size: .875rem;
+    line-height: 1.5rem;
+  }
+
+  .ctaTextBannerHome .btnCtaBanner{
+    width: 4.75rem;
+    height: 1.75rem;
+    font-size: .875rem;
+  }
+
+  .sliderBannerWrapper .slick-dots{
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .sliderBannerWrapper .slick-dots li{
+    width: .5rem;
+    height: .5rem;
+  }
+}

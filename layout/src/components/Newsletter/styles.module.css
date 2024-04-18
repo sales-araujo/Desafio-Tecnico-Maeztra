@@ -1,0 +1,90 @@
+.containerNewsletter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  width: 100%;
+  padding: 2.5rem;
+  border-top: 1px solid #EFEFEF;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.containerNewsletter h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.formNewsletter{
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 39.375rem;
+}
+
+.formNewsletter input{
+  width: 100%;
+  border-radius: .25rem;
+  border: 1px solid #353535;
+  padding: 0 8.625rem 0 1.5rem;
+  height: 2.5rem;
+  border: 1px solid #353535;
+}
+
+.formNewsletter input::placeholder{
+  font-size: .875rem;
+  font-weight: 400;
+  color: #353535;
+}
+
+.formNewsletter input:focus{
+  outline: 0;
+}
+
+.formNewsletter button{
+  position: absolute;
+  left: auto;
+  right: 0;
+  border-radius: .25rem;
+  background-color: #FAA500;
+  width: 8.1875rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  border: 0;
+  transition: 400ms ease;
+  cursor: pointer;
+}
+
+.formNewsletter button:hover{
+  background-color: #c58301f7;
+}
+
+@media screen and (max-width: 1024px){
+  .containerNewsletter{
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.9375rem;
+    gap: .5rem;
+  }
+
+  .formNewsletter{
+    display: flex;
+    gap: .9375rem;
+    justify-content: center;
+  }
+
+  .formNewsletter input{
+    max-width: 12.75rem;
+    height: 1.625rem;
+    padding: 0 1rem 0 1.5rem;
+  }
+
+  .formNewsletter button{
+    position: static;
+    height: 1.625rem;
+    width: 4.9375rem;
+    font-size: .875rem;
+  }
+}
